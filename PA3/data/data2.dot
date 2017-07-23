@@ -1,0 +1,28 @@
+digraph btree {
+n16:pn3 -> n3
+n3:pn1 -> n1
+n1 [shape=record, label="1|2|3|4|5"];
+n3:pn7 -> n7
+n7 [shape=record, label="6|7|8|9|10"];
+n3:pn8 -> n8
+n8 [shape=record, label="11|12|13|14|15"];
+n3:pn9 -> n9
+n9 [shape=record, label="16|17|18|19|20"];
+n3:pn10 -> n10
+n10 [shape=record, label="25|26|27|28|29|30"];
+n3 [shape=record, label="<pn1>|6|<pn7>|11|<pn8>|16|<pn9>|25|<pn10>"];
+n16:pn15 -> n15
+n15:pn12 -> n12
+n12 [shape=record, label="31|32|33|34|35"];
+n15:pn13 -> n13
+n13 [shape=record, label="36|37|38|39|40"];
+n15:pn14 -> n14
+n14 [shape=record, label="42|43|44|45|46|47"];
+n15:pn6 -> n6
+n6 [shape=record, label="60|70|80|90|100"];
+n15:pn4 -> n4
+n4 [shape=record, label="120|130|140|150|160"];
+n15 [shape=record, label="<pn12>|36|<pn13>|42|<pn14>|60|<pn6>|120|<pn4>"];
+n16 [shape=record, label="<pn3>|31|<pn15>"];
+
+}
